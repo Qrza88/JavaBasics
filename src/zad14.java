@@ -10,10 +10,10 @@ public class zad14 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj wagę w kg");
-        double waight = scanner.nextDouble();
+        double weight = scanner.nextDouble();
         System.out.println("Podaj wzrost w metrach");
-        double hight = scanner.nextDouble();
-        double BMI = waight/(hight*hight);
+        double height = scanner.nextDouble();
+        double BMI = weight/(height*height);
         if (BMI>24.9){
             System.out.println("Nadwaga");
         } else if(BMI<18.5){
