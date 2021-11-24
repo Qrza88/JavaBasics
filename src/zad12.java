@@ -45,16 +45,8 @@ public class zad12 {
         char lastLetter = str.charAt(lastLetterIndex);
         System.out.println(lastLetter);
 //      i
-//        System.out.println(str.(10)); / repeat na stringu
-        System.out.println(str);
-        System.out.println(str);
-        System.out.println(str);
-        System.out.println(str);
-        System.out.println(str);
-        System.out.println(str);
-        System.out.println(str);
-        System.out.println(str);
-        System.out.println(str);
+        System.out.println((str + "\n").repeat(10));
+
 
 
     }
