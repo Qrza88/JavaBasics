@@ -1,3 +1,6 @@
+import books.Book;
+import books.Writer;
+
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Random;
@@ -258,13 +261,21 @@ public class Main {
 //    double area = circle.calculateArea();
 //        System.out.println(area);
 //        System.out.println(circle.getRadius());
+//
+//            MyPoint myPoint1 = new MyPoint(0,0);
+//        System.out.println(myPoint1.getX());
+//        System.out.println(myPoint1.getY());
+//
+//        MyPoint myPoint2 = new MyPoint(3,4);
+//        System.out.println(myPoint1.getDistanceTo(myPoint2));
 
-            MyPoint myPoint1 = new MyPoint(0,0);
-        System.out.println(myPoint1.getX());
-        System.out.println(myPoint1.getY());
-
-        MyPoint myPoint2 = new MyPoint(3,4);
-        System.out.println(myPoint1.getDistanceTo(myPoint2));
+        Writer micek = new Writer("Adam", "Mickiewicz", "mężczyzna");
+        Book dziady = new Book("Dziady", 40.5, micek, "9781911414001");
+        System.out.println(micek);
+        System.out.printf("%s %s, %s\n", micek.getFirstName(), micek.getLastName(), micek.getSex());
+        System.out.printf("\"%s\" (%f) - %s - ISBN: %s\n", dziady.getTitle(), dziady.getPrice(),
+                dziady.getAuthor(), dziady.getIsbn());
+        System.out.println(dziady);
 
     }
 }
